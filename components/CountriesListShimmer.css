@@ -1,0 +1,43 @@
+.countries-shimmer {
+    max-width: 1280px;
+    margin-inline: auto;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    flex-wrap: wrap;
+}
+
+main .shimmer-effect {
+    --shimmer-color: hsl(0, 0%, 78%);
+}
+
+main.dark .shimmer-effect {
+    --shimmer-color: hsl(208, 21%, 34%);
+}
+
+
+.shimmer-effect {
+    height: 338px;
+    background-color: var(--elements-color);
+}
+
+.shimmer-effect .flag-container {
+    background-color: var(--shimmer-color);
+}
+
+.shimmer-effect .country-name {
+    height: 32px;
+    background-color: var(--shimmer-color);
+    border-radius: 4px;
+}
+
+.shimmer-effect p {
+    height: 22px;
+    border-radius: 4px;
+    background-color: var(--shimmer-color);
+}
+
+.shimmer-effect p:last-child {
+    width: 60%;
+}
